@@ -1,0 +1,33 @@
+{
+    "name": "Bl walk",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "TobbieII": "github:kaku111/20190209#9c728847d1a08815275108ec42009211d57c2f0d",
+        "bluetooth": "*",
+        "microphone": "*"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "main.py"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "pyprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "open": 1,
+                    "whitelist": 0
+                }
+            }
+        }
+    }
+}
